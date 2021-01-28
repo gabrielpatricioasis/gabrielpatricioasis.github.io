@@ -18,6 +18,10 @@ h1{
 	margin-top: 30px;
 }
 
+p{
+	text-align: left;
+}
+
 .arriba2 h1{
 	font-size: 4.5vh!important;
 	margin-bottom: 20px!important;
@@ -653,7 +657,7 @@ label{
 
 
 .about ul{
-	text-align: justify;
+	text-align: left;
 	/*margin-left: 20px;*/
 }
 
