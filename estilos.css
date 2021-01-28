@@ -40,6 +40,21 @@ p{
 
 /*MENU -------------------------*/
 
+.file{
+	width: 6.5%;
+	margin-left: -75px;
+}
+
+.files{
+	margin-right: -77px;
+}
+
+
+#menu .docu{
+	margin-left: -75px;
+	margin-right: -75px;
+}
+
 #navvv ul{
 	display: flex;
 	flex-flow: row nowrap;
@@ -400,7 +415,7 @@ footer h4{
 	display: inline-block;
 	margin: auto;
 	width: auto;
-	padding: 5px;
+	padding: 18px;
 }
 
 .form h2{
@@ -415,8 +430,17 @@ label{
 	margin: 5px;
 }
 
+textarea{
+	padding: 4px;
+}
+
+textarea::placeholder{
+	color:black;
+	-webkit-color: black;
+}
+
 .contact .alo{
-	width: 18%!important;
+	width: 19%!important;
 	margin-top: -25px;
 	margin-bottom: -25px;
 }
@@ -474,6 +498,7 @@ label{
 
 #destacado{
 	color: gray;
+	margin-top: -5px;
 }
 
 .contact img{

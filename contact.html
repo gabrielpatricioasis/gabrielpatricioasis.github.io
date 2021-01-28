@@ -33,7 +33,7 @@
         <a class="nav-link" href="av.html"> Audiovisión </a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="img/Philosophical Excerpts.pdf" target="_blank"> Antología (EN) </a>
+        <a class="nav-link files" href="img/Philosophical Excerpts.pdf" target="_blank"><img src="img/descarga.png" class="file"> Antología (EN) </a>
       </li>
       <li class="nav-item active">
         <a class="nav-link" href="about.html"> Sobre Gaver </a>
@@ -59,34 +59,45 @@
 	<div class="row">
 		<div class="contact col-lg-12 col-md-12 col-sm-12">
 			<img class="alo" src="img/cat.webp" alt="contactos">
+			<!--<form action="https://formspree.io/f/mbjpwenb" method="POST">
+			  <label>
+			    Nombre y apellido:
+			    <input type="text" name="_replyto">
+			  </label>
+			  <label>
+			    E-mail:
+			    <input type="text" name="_replyto">
+			  </label>
+			  <label>
+			    Escriba aquí su consulta:
+			    <textarea name="message"></textarea>
+			  </label>
+
+			  your other form fields go here 
+
+			  <button type="submit">Enviar</button>
+			</form>-->
 			<div class="form">
 					<h2 id="destacado">Llene el siguiente formulario</h2>
-					<form action="" method="" enctype="">
+					<form action="https://formspree.io/f/mbjpwenb" method="POST">
 					
 					<fieldset>
-					<label for="nombreform">Nombre y apellido</label><br>
-					<input type="text" name="Nombre y apellido" id="nombreform" placeholder="Aloha">
+					<label>Nombre y apellido:<br>
+					<input type="text" name="name" id="nombreform" placeholder="Aloha">
+					</label>
 					</fieldset>
 					<fieldset>
-					<label>E-mail</label><br>
-					<input type="email" name="email" placeholder="my heart">
-					</fieldset>
-					
-					<fieldset>
-					<label>Género</label>
-						<select>
-							<option value="M">Mujer</option>
-							<option value="H">Varón</option>
-							<option value="O" checked>Otrx</option>
-						</select>
+					<label>E-mail<br>
+					<input type="email" name="_replyto" placeholder="my heart">
+					</label>
 					</fieldset>
 					
 					<fieldset>
-					<textarea rows="5" cols="30">Escriba aquí su consulta</textarea>
+					<textarea name="message" rows="5" cols="30" placeholder="Escriba aquí su consulta..."></textarea>
 					</fieldset>
 					
-					<input type="submit" value="Enviar formulario"/>
-		    		<input type="reset" value="Limpiar formulario"/>
+					<button type="submit">Enviar</button>
+		    		<button type="reset">Limpiar</button>
 
 		    		</form>
 		    </div>
