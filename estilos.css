@@ -5,6 +5,7 @@
 
 body{
 	font-family: 'Roboto Mono', monospace;
+	hyphens: auto;
 	/*overflow-x: hidden;*/
 }
 
@@ -25,7 +26,7 @@ h1{
 }
 
 p{
-	text-align: left;
+	text-align: justify;
 }
 
 .arriba2 h1{
@@ -727,15 +728,15 @@ input{
 }
 
 .infoobra1 ul{
-	text-align: left;
+	text-align: justify;
 }
 
 .infoobra2 ul{
-	text-align: left;
+	text-align: justify;
 }
 
 .infoobra3 ul{
-	text-align: left;
+	text-align: justify;
 }
 
 .lista1{
@@ -748,7 +749,7 @@ input{
 
 
 .about ul{
-	text-align: left;
+	text-align: justify;
 	/*margin-left: 20px;*/
 }
 
