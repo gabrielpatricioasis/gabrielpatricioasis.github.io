@@ -29,6 +29,16 @@ p{
 	margin-bottom: 20px!important;
 }
 
+.arriba2 br{
+	display: none;
+}
+
+@media (max-width: 480px){
+	.arriba2 br{
+	display: initial;
+}
+}
+
 
 /*.arriba2 h1{
 	color: #ffc524;
