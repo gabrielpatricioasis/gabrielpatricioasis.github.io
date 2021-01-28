@@ -5,6 +5,7 @@
 
 body{
 	font-family: 'Roboto Mono', monospace;
+	/*overflow-x: hidden;*/
 }
 
 header{
@@ -16,6 +17,7 @@ h1{
 	color: #ffc524;
 	font-family: 'Syncopate', sans-serif;
 	margin-top: 30px;
+	text-align: center;
 }
 
 p{
@@ -50,11 +52,6 @@ p{
 }
 
 
-#menu .docu{
-	margin-left: -75px;
-	margin-right: -75px;
-}
-
 #navvv ul{
 	display: flex;
 	flex-flow: row nowrap;
@@ -69,6 +66,7 @@ p{
 	background-color: white;
 	padding: 3px;
 	margin: 2px;
+	text-align: center;
 }
 
 #navvv ul li a:link{
@@ -159,11 +157,18 @@ p{
 	background-image: url(img/woods.jpg);
 	background-size: cover;
 	border-radius: 40px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	
 
 }
 
 #menu h3{
-	margin: 55px 35px 30px 35px;
+	width: auto;
+	/*margin: 55px 40px 35px 40px;*/
+	margin: 40px;
 	background-color: rgba(222, 217, 211, 0.85);
 	display: inline-block;
 	padding: 15px;
@@ -172,12 +177,14 @@ p{
 	text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
 }
 
+
 #menu h3 span{
 	font-size: 20px;
 }
 
 #menu h2{
-	margin: 30px 45px 20px 45px;
+	/*margin: 35px 45px 35px 45px;*/
+	margin: 40px;
 	background-color: rgb(222, 217, 211);
 	display: inline-block;
 	padding: 15px;
@@ -412,18 +419,28 @@ footer h4{
 
 .form{
 	background-color: #dbcea9;
-	display: inline-block;
+	/*display: inline-block;*/
 	margin: auto;
 	width: auto;
-	padding: 18px;
+	padding-right: 7px;
+	padding-left: 7px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	text-align: center;
 }
+
+/*@media (max-width: 350px){
+	.form{
+		width: 100%;
+	}
+}*/
 
 .form h2{
 	font-size: 25px;
 }
 
 fieldset{
-	padding:5px;
+	padding: 5px;
 }
 
 label{
@@ -481,9 +498,39 @@ textarea::placeholder{
 	margin-bottom: 15px;
 }
 
-@media (max-width: 720px){
+/*@media (max-width: 720px){
+	.mail{
+	font-size: 25px;
+}
+}*/
+
+@media (min-width: 320px) and (max-width: 385px){
 	.mail{
 	font-size: 20px;
+}
+}
+
+@media (min-width: 385px) and (max-width: 480px){
+	.mail{
+	font-size: 25px;
+}
+}
+
+@media (min-width: 480px) and (max-width: 720px){
+	.mail{
+	font-size: 30px;
+}
+}
+
+@media (max-width: 320px){
+	.mail{
+	font-size: 18px;
+}
+}
+
+@media (max-width: 290px){
+	.mail{
+	font-size: 15px;
 }
 }
 
@@ -503,20 +550,25 @@ textarea::placeholder{
 
 .contact img{
 	width: 30%;
-	display: block;
+	/*display: block;*/
 	margin-right: auto;
 	margin-left: auto;
 	padding: 30px;
 	margin-bottom: 20px;
+	text-align: center;
 }
 
-.contact{
+.row .contact{
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 	justify-content: center;
-	/*margin-top: 170px;*/
-	display: inline-block;
+	margin: 0;
 	width: auto;
+}
+
+input{
+	width: 175px;
 }
 
 .phone{
