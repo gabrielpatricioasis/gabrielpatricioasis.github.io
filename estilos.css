@@ -5,7 +5,6 @@
 
 body{
 	font-family: 'Roboto Mono', monospace;
-	hyphens: auto;
 	/*overflow-x: hidden;*/
 }
 
@@ -26,6 +25,7 @@ h1{
 }
 
 p{
+	hyphens: auto;
 	text-align: justify;
 }
 
@@ -153,6 +153,7 @@ p{
 
 .seccion article{
 	margin-bottom: 80px;
+	hyphens: auto;
 	text-align: justify;
 	margin-top: 14px;
 }
@@ -728,14 +729,17 @@ input{
 }
 
 .infoobra1 ul{
+	hyphens: auto;
 	text-align: justify;
 }
 
 .infoobra2 ul{
+	hyphens: auto;
 	text-align: justify;
 }
 
 .infoobra3 ul{
+	hyphens: auto;
 	text-align: justify;
 }
 
@@ -749,6 +753,7 @@ input{
 
 
 .about ul{
+	hyphens: auto;
 	text-align: justify;
 	/*margin-left: 20px;*/
 }
