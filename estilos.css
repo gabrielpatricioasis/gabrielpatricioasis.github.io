@@ -79,7 +79,7 @@ p{
 #navvv ul li{
 	border: solid 3px black;
 	background-color: white;
-	padding: 3px;
+	padding: 3px 3px .3px 3px;
 	margin: 2px;
 	text-align: center;
 }
