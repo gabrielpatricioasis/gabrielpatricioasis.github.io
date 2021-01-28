@@ -11,12 +11,16 @@ body{
 header{
 	background-color: #32a89e;
 	padding: 15px 5px 15px 5px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
 }
 
 h1{
 	color: #ffc524;
 	font-family: 'Syncopate', sans-serif;
-	margin-top: 30px;
+	margin-top: 15px;
 	text-align: center;
 }
 
