@@ -4,6 +4,8 @@
 	<title>Obra fotográfica</title>
 	<link rel = "icon" href = "img/arbol2.png" type = "image/x-icon">
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="estilos.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Rubik+Mono+One|Syncopate:700&display=swap" rel="stylesheet">
 	<meta name="description" content="Conjunto de obras publicadas por un artista argentino nacido en 1995. Literatura, fotografía y audiovisión.">
@@ -12,51 +14,80 @@
 </head>
 
 <body class="cielo">
+<div class="container-fluid">
 
-	<div class="arriba">
-		<h1>Obra fotográfica</h1>
-		<div class="dropdown">
-			<button class="dropbtn"><img src="img/plus.svg" class="plus"></button>
-			<div class="dropdown-content">
-				<a href="lit.html">Literatura</a>
-				<a href="av.html">Audiovisión</a>
-				<a href="img/Philosophical Excerpts.pdf" target="_blank">Antología <span class="english">(en inglés)</span></a>
-				<a href="about.html">Sobre Gaver</a>
-				<a href="contact.html">Contacto</a>
-				<a href="index.html">Página principal</a>
-				<div class="dropdown2"><div class="dropbtn2"><span class="colab">Co-elaboraciones</span></div>
-					<div class="dropdowncontent2">
-						<a href="https://www.youtube.com/watch?v=JKx_sjp5BSI" target="_blank"><span class="colabb"><em>Kiki Ramos Sörvik</em></span></a>
-						<a href="https://www.youtube.com/watch?v=UKxregBUQko" target="_blank"><span class="colabb"><em>N. Zogbe & A. Petriz</em></span></a>
-						<a href="https://www.youtube.com/watch?v=aR8jQhi_Alo" target="_blank"><span class="colabb"><em>Comparsa Drag</em></span></a>
-					</div>
-				</div>	
-			</div>
-		</div> 
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand"><img src="img/plus.svg" class="plus"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html"> Inicio <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="lit.html"> Literatura </a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="av.html"> Audiovisión </a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" target="_blank" href="img/Philosophical Excerpts.pdf"> Antología (EN) </a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="about.html"> Sobre Gaver </a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="contact.html"> Con tacto </a>
+      </li>
+      <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Co-elaboraciones
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" target="_blank" href="https://www.youtube.com/watch?v=JKx_sjp5BSI">Kiki Ramos Sörvik</a>
+          <a class="dropdown-item" target="_blank" href="https://www.youtube.com/watch?v=UKxregBUQko">N. Zogbe & A. Petriz</a>
+          <a class="dropdown-item" target="_blank" href="https://www.youtube.com/watch?v=aR8jQhi_Alo">Comparsa Drag</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+	<div class="arriba2">
+		<h1>Obra fotográfica</h1> 
 	</div>
 	
-	<div class="trees">
-		<img src="img/tree1.png" alt="arbol1">
-		<img src="img/tree2.png" alt="arbol2">
-		<img class="tree3" src="img/tree3.png" alt="arbol3">
-	</div>
-	<div class="contenedorobra">
-		<h2>CASI DIEZ AÑOS: EL CONCEPTO ES UN DESASTRE</h2>
-		<div class="infoobra1">
-			<h3>Información sobre la obra</h3>
-			<ul class="lista1">
-				<li>Publicada en 2019.</li>
-				<li>9 largos años de fotografía analógica. Mixtura.</li>
-				<li>Obra de acceso abierto.</li>
-			</ul>
+	<div class="row">
+		<div class="trees col-lg-12 col-md-12 col-sm-12">
+			<img class="img-fluid marg1" src="img/tree1.png" alt="arbol1">
+			<img class="img-fluid" src="img/tree2.png" alt="arbol2">
+			<img class="tree3" src="img/tree3.png" alt="arbol3">
 		</div>
-		<div class="foto"><a href="img/CASI DIEZ AÑOS.pdf" target="_blank"><img src="img/click.png" alt="click2"></a></div>
+		<div class="contenedorobra">
+			<h2>CASI DIEZ AÑOS: EL CONCEPTO ES UN DESASTRE</h2>
+			<div class="infoobra2">
+				<h3>Información sobre la obra</h3>
+				<ul class="lista1">
+					<li>Publicada en 2019.</li>
+					<li>9 largos años de fotografía analógica. Mixtura.</li>
+					<li>Obra de acceso abierto.</li>
+				</ul>
+			</div>
+			<div class="lit"><a href="img/CASI DIEZ AÑOS.pdf" target="_blank"><img src="img/click.gif" alt="click" width="230"></a></div>
+		</div>
+		<div class="treesagain col-lg-12 col-md-12 col-sm-12">
+			<img class="img-fluid marg" src="img/tree1.png" alt="arbol1">
+			<img class="img-fluid" src="img/tree2.png" alt="arbol2">
+			<img class="tree3" src="img/tree3.png" alt="arbol3">
+		</div>
 	</div>
-	<div class="treesagain">
-		<img src="img/tree1.png" alt="arbol1">
-		<img src="img/tree2.png" alt="arbol2">
-		<img class="tree3" src="img/tree3.png" alt="arbol3">
-	</div>				
+</div>	
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>			
 
 </body>
 </html>

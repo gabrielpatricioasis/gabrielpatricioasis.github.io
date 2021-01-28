@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="estilos.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Rubik+Mono+One|Syncopate:700&display=swap" rel="stylesheet">
 	<meta name="description" content="Conjunto de obras publicadas por un artista argentino nacido en 1995. Literatura, fotografía y audiovisión.">
@@ -12,56 +13,76 @@
 </head>
 <body class="cielo">
 <div class="container-fluid">
-	<header class="row">
-		<div class="arriba col-lg-6 col-md-12 col-sm-12">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand"><img src="img/plus.svg" class="plus"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html"> Inicio <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="lit.html"> Literatura </a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="foto.html"> Fotografía </a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="av.html"> Audiovisión </a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="img/Philosophical Excerpts.pdf" target="_blank"> Antología (EN) </a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="about.html"> Sobre Gaver </a>
+      </li>
+      <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Co-elaboraciones
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" target="_blank" href="https://www.youtube.com/watch?v=JKx_sjp5BSI">Kiki Ramos Sörvik</a>
+          <a class="dropdown-item" target="_blank" href="https://www.youtube.com/watch?v=UKxregBUQko">N. Zogbe & A. Petriz</a>
+          <a class="dropdown-item" target="_blank" href="https://www.youtube.com/watch?v=aR8jQhi_Alo">Comparsa Drag</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="arriba2">
 			<h1>Con tacto</h1>
-		</div>	
-		<div class="col-lg-6 col-md-12 col-sm-12">	
-			<div class="dropdown">
-				<button class="dropbtn"><img src="img/plus.svg" class="plus"></button>
-				<div class="dropdown-content">
-					<a href="lit.html">Literatura</a>
-					<a href="foto.html">Fotografía</a>
-					<a href="av.html">Audiovisión</a>
-					<a href="img/Philosophical Excerpts.pdf" target="_blank">Antología <span class="english">(en inglés)</span></a>
-					<a href="about.html">Sobre Gaver</a>
-					<a href="index.html">Página principal</a>
-					<div class="dropdown2"><div class="dropbtn2"><span class="colab">Co-elaboraciones</span></div>
-						<div class="dropdowncontent2">
-							<a href="https://www.youtube.com/watch?v=JKx_sjp5BSI" target="_blank"><span class="colabb"><em>Kiki Ramos Sörvik</em></span></a>
-							<a href="https://www.youtube.com/watch?v=UKxregBUQko" target="_blank"><span class="colabb"><em>N. Zogbe + A. Petriz</em></span></a>
-							<a href="https://www.youtube.com/watch?v=aR8jQhi_Alo" target="_blank"><span class="colabb"><em>Comparsa Drag</em></span></a>
-						</div>
-					</div>	
-				</div>
-			</div>
 		</div>
-	</header>
 
 	<div class="row">
 		<div class="contact col-lg-12 col-md-12 col-sm-12">
-			<img class="img-fluid" src="img/contact.png" class="alo" alt="contactos">
-			<img class="img-fluid" src="img/phone.png" class="phone" alt="telefono">
-			<img class="img-fluid" src="img/client.png" class="client" alt="cliente">
+			<img class="alo" src="img/cat.webp" alt="contactos">
 			<div class="form">
 					<h2 id="destacado">Llene el siguiente formulario</h2>
 					<form action="" method="" enctype="">
+					
 					<fieldset>
-					<label for="nombreform">Nombre y apellido</label>
-					<input type="text" name="Nombre y apellido" id="nombreform" placeholder="Escriba su nombre completo">
+					<label for="nombreform">Nombre y apellido</label><br>
+					<input type="text" name="Nombre y apellido" id="nombreform" placeholder="Aloha">
+					</fieldset>
+					<fieldset>
+					<label>E-mail</label><br>
+					<input type="email" name="email" placeholder="my heart">
+					</fieldset>
 					
-					<label>E-mail</label>
-					<input type="email" name="email">
-					
+					<fieldset>
 					<label>Género</label>
 						<select>
 							<option value="M">Mujer</option>
-							<option value="H">Hombre</option>
+							<option value="H">Varón</option>
 							<option value="O" checked>Otrx</option>
 						</select>
+					</fieldset>
 					
 					<fieldset>
-					<textarea rows="10" cols="50">Escriba aquí su consulta</textarea>
+					<textarea rows="5" cols="30">Escriba aquí su consulta</textarea>
 					</fieldset>
 					
 					<input type="submit" value="Enviar formulario"/>
@@ -69,10 +90,18 @@
 
 		    		</form>
 		    </div>
-			<img class="img-fluid" src="img/globo.png" class="globo" alt="mundo">
-			<img class="img-fluid" src="img/call.png" alt="agenda">    
+			<img class="alo2" src="img/unnamed.gif" class="globo" alt="mundo">  
 	    </div>
 	</div>
-</div>	  
+
+	<div class="mail">
+		<a href = "mailto: gabriel.asis95@gmail.com">GABRIEL.ASIS95@GMAIL.COM</a>
+	</div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>	  
 </body>
 </html>
