@@ -6,6 +6,7 @@
 body{
 	font-family: 'Roboto Mono', monospace;
 	overflow-x: hidden;
+	box-sizing: border-box;
 }
 
 header{
@@ -15,6 +16,12 @@ header{
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
+}
+
+@media (min-width: 1300px){
+	header h1{
+		white-space: nowrap;
+		}
 }
 
 h1{
@@ -57,14 +64,14 @@ p{
 
 /*MENU -------------------------*/
 
-.file{
+/*.file{
 	width: 6.5%;
 	margin-left: -75px;
 }
 
 .files{
 	margin-right: -77px;
-}
+}*/
 
 
 #navvv ul{
@@ -124,8 +131,8 @@ p{
 
 .nav-item{
 	background-color: #e4ffde;
-	margin-right: 8px;
-	margin: left: 8px;
+	margin-right: 4px;
+	margin-left : 4px;
 	border-radius: 8px;
 }
 .nav-item:hover{
@@ -137,6 +144,12 @@ p{
 	margin-top: -40px;
 }
 
+@media (max-width: 1080px){
+	.nav-item{
+		margin-right: 1px;
+		margin-left: 1px;
+	}
+}
 
 /*SECTION & ASIDE-------------------------*/
 
@@ -156,6 +169,42 @@ p{
 	hyphens: auto;
 	text-align: justify;
 	margin-top: 14px;
+}
+
+.seccion article h3{
+	font-size: 170%;
+	hyphens: none;
+	text-align: center;
+
+
+}
+
+@media (min-width: 1408px) and (max-width: 1568px){
+	.seccion article h3{
+		font-size: 150%;
+	}
+}
+
+@media (min-width: 1244px) and (max-width: 1408px){
+	.seccion article h3{
+		font-size: 130%;
+	}
+}
+
+@media (min-width: 1082px) and (max-width: 1244px){
+	.seccion article h3{
+		font-size: 110%;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1082px){
+	.seccion article h3{
+		font-size: 95%;
+	}
+}
+
+article p{
+	font-size: 105%;
 }
 
 .lateral{
@@ -195,7 +244,7 @@ p{
 
 
 #menu h3 span{
-	font-size: 20px;
+	font-size: 18px;
 }
 
 #menu h2{
@@ -264,16 +313,24 @@ button:focus{
   	margin-bottom: auto;
 }
 
-.align{
+/*.align{
 	text-align: right;
 }
 
+.al{
+	text-align: left;
+}*/
+
+#CarouselEjemplo{
+	margin-top: 10px;
+}
 
 /*FOOTER --------------------------------*/
 
 footer{
 	background-color: #ba86b6;
-	padding: 50px;
+	padding: 35px;
+	/*padding: 20px 20px 10px 20px;*/
 	color: #ffffff;
 	font-family: 'Rubik Mono One', sans-serif;
 	font-weight: 200;
@@ -284,8 +341,45 @@ footer{
   background-color: black;
   color: white;
   padding: 16px;
-  font-size: 14.5px;
+  font-size: 20px;
   border: none;
+  margin: auto;
+}
+
+@media (min-width: 992px) and (max-width: 1155px){
+	.dropupbtn{
+		font-size: 17px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 793px){
+	.dropupbtn{
+		font-size: 17px;
+	}
+}
+
+@media (min-width: 391px) and (max-width: 433px){
+	.dropupbtn{
+		font-size: 19px;
+	}
+}
+
+@media (min-width: 351px) and (max-width: 390px){
+	.dropupbtn{
+		font-size: 16px;
+	}
+}
+
+@media (min-width: 317px) and (max-width: 350px){
+	.dropupbtn{
+		font-size: 13.5px;
+	}
+}
+
+@media (max-width: 316px){
+	.dropupbtn{
+		font-size: 10px;
+	}
 }
 
 
@@ -293,15 +387,15 @@ footer{
 .dropup {
   position: relative;
   display: inline-block;
-  margin-top: 10px;
-  margin-bottom: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 /* Dropup content (Hidden by Default) */
 .dropup-content {
   display: none;
   position: absolute;
-  bottom: 53px;
+  bottom: 56px;
   background-color: white;
   min-width: 160px;
   font-size: /*11.57px*/ 16px;
@@ -336,20 +430,66 @@ footer{
 
 .logos{
 	width: 11%;
-	max-width: 100%;
-	margin-top: 40px;
-	/*padding: 7px;*/
-	margin: 0 auto;
+	padding: 4px;
+	/*max-width: 100%;*/
+	/*margin-top: 40px;*/
+	margin: auto;
 }
+
+@media (min-width: 992px) and (max-width: 1240px){
+	.logos{
+		width: 40%;
+	}
+}
+
+@media (min-width: 766px) and (max-width: 991px){
+	.logos{
+		width: 15%;
+	}
+}
+
+@media (min-width: 1240px){
+	.logos{
+		width: 27%;
+	}
+}
+
+@media (max-width: 580px){
+	.logos{
+		width: 18%;
+	}
+}
+
 
 footer h4{
 	text-align: right;
-	margin-top: 25px;
+	margin: auto;
 }
 
+@media (min-width: 992px) and (max-width: 1140px){
+	footer h4{
+		font-size: 120%;
+	}
+}
+
+@media (max-width: 991px){
+	footer h4{
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+}
+
+/*@media (min-width: 992px) and (max-width: 1366px){
+	footer h4{
+		font-size: 100%;
+	}
+}*/
+
+
+
 .logo{
-	padding-top: 10px;
-	margin: 0 auto;
+	padding: 8px;
+	margin: auto;
 	display: block;
 }
 
