@@ -1016,7 +1016,7 @@ input{
 }
 
 .videos .adventures{
-	margin-top: 15px;
+	margin-top: 30px; /*estaba en 15*/
 }
 
 .videos iframe{
