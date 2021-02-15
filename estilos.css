@@ -135,7 +135,7 @@ p{
 	margin-left : 4px;
 	border-radius: 8px;
 }
-.nav-item:hover{
+.nav-item:not(.disabled):hover{
 	filter: saturate(2.3);
 	transition-duration: .3s;
 }
