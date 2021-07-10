@@ -499,11 +499,7 @@ footer h4{
 .cielo{
 	/*background-color: #95b8f0;*/
 	background-image: url(img/skyy.jpg);
-	-webkit-background-size: cover no-repeat;
-  	-moz-background-size: cover no-repeat;
- 	 -o-background-size: cover no-repeat;
- 	 background-size: cover no-repeat;
-	-webkit-background-size: cover no-repeat;
+	background-size:  cover;
 	min-height: 100%;
 	min-width: 100%;
 	font-family: 'Roboto Mono', monospace;
@@ -902,6 +898,7 @@ input{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	margin: 0 auto;
 }
 
 .gallery img{
