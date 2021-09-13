@@ -778,6 +778,10 @@ input{
 	margin: auto;
 	width: auto;
 }
+
+	#navvv ul li h2{
+		font-size: 1.6rem!important;
+	}
 }
 
 @media (max-width: 720px){
@@ -816,6 +820,10 @@ input{
 	width: 23%!important;
 }
 
+.donacion{
+	width: 70vw!important;
+}
+
 	
 }
 
@@ -844,14 +852,36 @@ input{
 }
 
 @media (min-width: 720px){
-	.patreon, .cafe{
-		width: 22%;	
+	.patreon{
+		width: 50%;
+		height: 100%;	
+	}
+
+	.cafe{
+		width: 50%;
+		height: 100%;	
+	}
+}
+
+
+
+@media (min-width: 1280px){
+	.patreon{
+		width: 23%;
+		height: 100%;	
+	}
+
+	.cafe{
+		width: 23%;
+		height: 100%;	
 	}
 }
 
 .row h3{
 	color: #2c1b96;
 }
+
+
 
 
 .infoobra2{
@@ -900,15 +930,15 @@ input{
 	margin-left: 20px;
 }
 
-.lista2 .forget{
+.forget{
 	font-family: 'Forget Me Knot Roman';
 }
 
-.lista2 .forget a{
+.forget a{
 	text-decoration: none;
 }
 
-.lista2 .forget a:hover{
+.forget a:hover{
 	opacity: 0.6;
 }
 
@@ -1119,4 +1149,9 @@ input{
 
 .donacion{
 	margin: 7px;
+	width: 25rem;
+}
+
+.flipp{
+	transform: scaleX(-1);
 }

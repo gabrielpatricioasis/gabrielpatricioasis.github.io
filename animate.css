@@ -140,8 +140,8 @@
   }
 
   50% {
-    -webkit-transform: scale3d(1.05, 1.05, 1.05);
-    transform: scale3d(1.05, 1.05, 1.05);
+    -webkit-transform: scale3d(1.02, 1.02, 1.02);
+    transform: scale3d(1.02, 1.02, 1.02);
   }
 
   to {
@@ -153,6 +153,8 @@
 .pulse {
   -webkit-animation-name: pulse;
   animation-name: pulse;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
 }
 
 @-webkit-keyframes rubberBand {

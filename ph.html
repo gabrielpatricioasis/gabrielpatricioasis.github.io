@@ -12,6 +12,7 @@
 	<meta name="twitter:description" content="Obra fotográfica publicada por Gaber, un artista argentino nacido en 1995.">
 	<meta name="twitter:image" content="img/arbol2.png">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="animate.css">
 	<link rel="stylesheet" type="text/css" href="estilos.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Rubik+Mono+One|Syncopate:700&display=swap" rel="stylesheet">
 	<meta name="description" content="Obra fotográfica publicada por Gaber, un artista argentino nacido en 1995.">
@@ -23,7 +24,7 @@
 <div class="container-fluid">
 
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand"><img src="img/plus.svg" class="plus"></a>
+  <a class="navbar-brand" href="index.html"><img src="img/plus.svg" class="plus"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -31,6 +32,9 @@
     <ul class="navbar-nav">
       <li class="nav-item active">
         <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="about.html">Sobre Gaber</a>
       </li>
       <li class="nav-item active">
         <a class="nav-link" href="lit.html">Literatura</a>
@@ -43,9 +47,6 @@
       </li>
       <li class="nav-item active">
         <a class="nav-link files" target="_blank" href="img/Philosophical Excerpts.pdf">📁 Antología (EN)</a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="about.html">Sobre Gaber</a>
       </li>
       <li class="nav-item active">
         <a class="nav-link" href="contact.html">Contacto/Don</a>
@@ -68,16 +69,16 @@
 	
 	<div class="row">
 		<div class="trees col-lg-12 col-md-12 col-sm-12">
-			<img class="img-fluid marg1" src="img/tree1.png" alt="arbol1">
-			<img class="img-fluid" src="img/tree2.png" alt="arbol2">
-			<img class="tree3" src="img/tree3.png" alt="arbol3">
+			<img class="img-fluid marg1 animated pulse" src="img/tree1.png" alt="arbol1">
+			<img class="img-fluid animated pulse" src="img/tree2.png" alt="arbol2">
+			<img class="tree3 animated pulse" src="img/tree3.png" alt="arbol3">
 		</div>
 		<div class="contenedorobra">
 			<h2>CASI DIEZ AÑOS: EL CONCEPTO ES UN DESASTRE</h2>
 			<div class="infoobra2">
 				<h3>Información sobre la obra</h3>
 				<ul class="lista1">
-					<li>Publicada en 2021 mediante la editorial de libros Proserpexa.</li>
+					<li>Publicada en 2021 mediante la editorial de libros <span class="forget"><a href="https://proserpexa.com.ar" target="_blank">PROSERPEXA</a></span>.</li>
 					<li>9 largos años de fotografía analógica. Mixtura.</li>
 					<li>Obra de acceso abierto.</li>
 				</ul>
@@ -85,12 +86,20 @@
 			<div class="lit"><a href="#" target="_blank"><img src="img/click.gif" alt="click" width="230"></a></div>
 		</div>
 		<div class="treesagain col-lg-12 col-md-12 col-sm-12">
-			<img class="img-fluid marg" src="img/tree1.png" alt="arbol1">
-			<img class="img-fluid" src="img/tree2.png" alt="arbol2">
-			<img class="tree3" src="img/tree3.png" alt="arbol3">
+			<img class="img-fluid marg animated pulse" src="img/tree1.png" alt="arbol1">
+			<img class="img-fluid animated pulse" src="img/tree2.png" alt="arbol2">
+			<img class="tree3 animated pulse" src="img/tree3.png" alt="arbol3">
 		</div>
 	</div>
 </div>	
+
+<footer class="bg-light text-center text-lg-start">
+  <!-- Copyright -->
+  <div class="text-center p-3 text-dark">
+    © 2021 gaber
+  </div>
+  <!-- Copyright -->
+</footer>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
