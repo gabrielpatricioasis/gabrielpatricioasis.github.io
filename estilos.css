@@ -403,7 +403,7 @@ footer{
   bottom: 56px;
   background-color: white;
   min-width: 160px;
-  font-size: /*11.57px*/ 16px;
+  font-size: /*11.57px*/ .9rem;
   /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
   z-index: 1;
 }
@@ -1154,4 +1154,16 @@ input{
 
 .flipp{
 	transform: scaleX(-1);
+}
+
+@media (max-width: 420px){
+	.arriba2 h1 .normal{
+		display: none;
+	}
+}
+
+@media (min-width: 420px){
+	.arriba2 h1 .anormal{
+		display: none;
+	}
 }
