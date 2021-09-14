@@ -1182,3 +1182,13 @@ input{
 	transition-duration: 1.6s;
 }
 
+.contact .alo:hover{
+ 	transform: translate(70px);
+	transition-duration: 2s;
+}
+
+.alo2:hover{
+	transform: scale3d(0.1, 0.1, 1);
+	transition-duration: 2s;
+}
+
