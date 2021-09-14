@@ -1152,9 +1152,6 @@ input{
 	width: 25rem;
 }
 
-.flipp{
-	transform: scaleX(-1);
-}
 
 @media (max-width: 420px){
 	.arriba2 h1 .normal{
@@ -1166,4 +1163,19 @@ input{
 	.arriba2 h1 .anormal{
 		display: none;
 	}
+}
+
+.lateral .vector:hover{
+	transform: scaleX(-1);
+	transition-duration: 1.6s;
+}
+
+.lateral .vectorrr:hover{
+	transform: rotate(360deg);
+	transition-duration: 1.6s;
+}
+
+.lateral .vectorr:hover{
+	transform: scale3d(1.8, 0.6, 1);
+	transition-duration: 1.6s;
 }
