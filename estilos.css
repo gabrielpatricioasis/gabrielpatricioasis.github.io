@@ -1192,3 +1192,19 @@ input{
 	transition-duration: 2s;
 }
 
+article .imgindex{
+	animation-name: fotito;
+	animation-duration: infinite;
+}
+
+article .imgindex:hover{
+	opacity: .5;
+}
+
+@keyframes fotito {
+  0% { opacity: .7; }
+  25% { opacity: .5; }
+  50% { opacity: .3;}
+  75% { opacity: .7; }
+  100% { opacity: 1; }
+}
